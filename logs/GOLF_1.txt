@@ -1,0 +1,176 @@
+GameOfLifeForward_1
+GameOfLifeForward_1(
+  (criterion): MSELoss()
+  (layers): ModuleList(
+    (0): Conv2d(1, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), padding_mode=circular)
+    (1): Conv2d(2, 2, kernel_size=(1, 1), stride=(1, 1))
+    (2): Conv2d(2, 1, kernel_size=(1, 1), stride=(1, 1))
+  )
+  (dropout): Dropout(p=0.0, inplace=False)
+  (activation): PReLU(num_parameters=1)
+)
+activation.weight
+[0.25]
+
+layers.0.weight
+[[[[-0.12584336  0.01986398  1.0610362 ]
+   [ 0.04754705 -0.08217019  0.34319985]
+   [ 1.0864941  -0.20694128 -0.40212983]]]]
+
+layers.0.bias
+[0.1]
+
+layers.1.weight
+[[[[ 0.37500164]]
+  [[ 1.8041545 ]]]
+ [[[-0.64652336]]
+  [[-0.37570596]]]]
+
+layers.1.bias
+[0.1 0.1]
+
+layers.2.weight
+[[[[-1.1719162 ]]
+  [[-0.05805358]]]]
+
+layers.2.bias
+[0.1]
+
+--------------------
+cpu Training: GameOfLifeForward_1
+GameOfLifeForward_1.load(): model file not found, reinitializing weights
+
+GameOfLifeForward_1(
+  (criterion): MSELoss()
+  (layers): ModuleList(
+    (0): Conv2d(1, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), padding_mode=circular)
+    (1): Conv2d(2, 2, kernel_size=(1, 1), stride=(1, 1))
+    (2): Conv2d(2, 1, kernel_size=(1, 1), stride=(1, 1))
+  )
+  (dropout): Dropout(p=0.0, inplace=False)
+  (activation): PReLU(num_parameters=1)
+)
+   1 |     500 | loss: 0.2911977589 | accuracy = 0.7436000000 |  3.621ms/board |   0m 00s 
+   2 |    1000 | loss: 0.2865561306 | accuracy = 0.7336000000 |  0.146ms/board |   0m 00s 
+   3 |    1500 | loss: 0.2959681094 | accuracy = 0.7348000000 |  0.158ms/board |   0m 00s 
+   4 |    2000 | loss: 0.2920854926 | accuracy = 0.7348000000 |  0.150ms/board |   0m 00s 
+   5 |    2500 | loss: 0.2999783993 | accuracy = 0.7184000000 |  0.133ms/board |   0m 00s 
+   6 |    3000 | loss: 0.2794746697 | accuracy = 0.7372000000 |  0.150ms/board |   0m 00s 
+   7 |    3500 | loss: 0.2925297499 | accuracy = 0.7300000000 |  0.145ms/board |   0m 00s 
+   8 |    4000 | loss: 0.2815501273 | accuracy = 0.7372000000 |  0.139ms/board |   0m 00s 
+   9 |    4500 | loss: 0.3040158033 | accuracy = 0.7248000000 |  0.155ms/board |   0m 00s 
+  10 |    5000 | loss: 0.2945891380 | accuracy = 0.7236000000 |  0.129ms/board |   0m 00s 
+  20 |   10000 | loss: 0.2875690907 | accuracy = 0.7325600000 |  0.144ms/board |   0m 01s 
+  30 |   15000 | loss: 0.2888970190 | accuracy = 0.7348800000 |  0.137ms/board |   0m 01s 
+  40 |   20000 | loss: 0.2816880655 | accuracy = 0.7314000000 |  0.140ms/board |   0m 01s 
+  50 |   25000 | loss: 0.2859488785 | accuracy = 0.7193200000 |  0.145ms/board |   0m 01s 
+  60 |   30000 | loss: 0.2807687849 | accuracy = 0.7336000000 |  0.146ms/board |   0m 01s 
+  70 |   35000 | loss: 0.2779763889 | accuracy = 0.7264000000 |  0.137ms/board |   0m 01s 
+  80 |   40000 | loss: 0.2781561989 | accuracy = 0.7272000000 |  0.146ms/board |   0m 01s 
+  90 |   45000 | loss: 0.2794867623 | accuracy = 0.7269200000 |  0.144ms/board |   0m 02s 
+ 100 |   50000 | loss: 0.2701150727 | accuracy = 0.7385600000 |  0.143ms/board |   0m 02s 
+ 200 |  100000 | loss: 0.2636261016 | accuracy = 0.7292480000 |  0.137ms/board |   0m 03s 
+ 300 |  150000 | loss: 0.2446325419 | accuracy = 0.7303320000 |  0.139ms/board |   0m 05s 
+ 400 |  200000 | loss: 0.2270580668 | accuracy = 0.7295880000 |  0.147ms/board |   0m 06s 
+ 500 |  250000 | loss: 0.2099181448 | accuracy = 0.7294720000 |  0.144ms/board |   0m 08s 
+ 600 |  300000 | loss: 0.1941336693 | accuracy = 0.7287264000 |  0.151ms/board |   0m 09s 
+ 700 |  350000 | loss: 0.1837815558 | accuracy = 0.7330960000 |  0.137ms/board |   0m 10s 
+ 800 |  400000 | loss: 0.1773201418 | accuracy = 0.7349456000 |  0.142ms/board |   0m 12s 
+ 900 |  450000 | loss: 0.1729496966 | accuracy = 0.7334624000 |  0.160ms/board |   0m 13s 
+1000 |  500000 | loss: 0.1715989247 | accuracy = 0.7311432000 |  0.144ms/board |   0m 15s 
+1100 |  550000 | loss: 0.1721413402 | accuracy = 0.7373640000 |  0.138ms/board |   0m 16s 
+1200 |  600000 | loss: 0.1684965498 | accuracy = 0.7415520000 |  0.141ms/board |   0m 18s 
+1300 |  650000 | loss: 0.1689024947 | accuracy = 0.7408528000 |  0.134ms/board |   0m 19s 
+1400 |  700000 | loss: 0.1681371493 | accuracy = 0.7367192000 |  0.148ms/board |   0m 21s 
+1500 |  750000 | loss: 0.1684537886 | accuracy = 0.7289520000 |  0.137ms/board |   0m 22s 
+1600 |  800000 | loss: 0.1691351671 | accuracy = 0.7250000000 |  0.143ms/board |   0m 23s 
+1700 |  850000 | loss: 0.1677308630 | accuracy = 0.7267712000 |  0.156ms/board |   0m 25s 
+1800 |  900000 | loss: 0.1663767242 | accuracy = 0.7408512000 |  0.144ms/board |   0m 26s 
+1900 |  950000 | loss: 0.1678380504 | accuracy = 0.7415992000 |  0.125ms/board |   0m 28s 
+2000 | 1000000 | loss: 0.1668822230 | accuracy = 0.7496192000 |  0.134ms/board |   0m 29s 
+2100 | 1050000 | loss: 0.1675521033 | accuracy = 0.7532712000 |  0.148ms/board |   0m 30s 
+2200 | 1100000 | loss: 0.1677202629 | accuracy = 0.7548536000 |  0.138ms/board |   0m 32s 
+2300 | 1150000 | loss: 0.1657902013 | accuracy = 0.7559696000 |  0.141ms/board |   0m 33s 
+2400 | 1200000 | loss: 0.1672716759 | accuracy = 0.7560736000 |  0.137ms/board |   0m 35s 
+2500 | 1250000 | loss: 0.1680913529 | accuracy = 0.7548912000 |  0.145ms/board |   0m 36s 
+2600 | 1300000 | loss: 0.1658519647 | accuracy = 0.7650296000 |  0.143ms/board |   0m 38s 
+2700 | 1350000 | loss: 0.1675072819 | accuracy = 0.7536000000 |  0.138ms/board |   0m 39s 
+2800 | 1400000 | loss: 0.1669470589 | accuracy = 0.7602840000 |  0.145ms/board |   0m 41s 
+2900 | 1450000 | loss: 0.1673959246 | accuracy = 0.7615144000 |  0.144ms/board |   0m 42s 
+3000 | 1500000 | loss: 0.1660219116 | accuracy = 0.7577232000 |  0.150ms/board |   0m 44s 
+3100 | 1550000 | loss: 0.1678675840 | accuracy = 0.7576448000 |  0.142ms/board |   0m 45s 
+3200 | 1600000 | loss: 0.1669997692 | accuracy = 0.7622360000 |  0.135ms/board |   0m 46s 
+3300 | 1650000 | loss: 0.1663477669 | accuracy = 0.7751432000 |  0.142ms/board |   0m 48s 
+3400 | 1700000 | loss: 0.1630824441 | accuracy = 0.7761656000 |  0.131ms/board |   0m 49s 
+3500 | 1750000 | loss: 0.1634054513 | accuracy = 0.7429408000 |  0.129ms/board |   0m 51s 
+3600 | 1800000 | loss: 0.1611760992 | accuracy = 0.7866080000 |  0.141ms/board |   0m 52s 
+3700 | 1850000 | loss: 0.1614652783 | accuracy = 0.7689120000 |  0.139ms/board |   0m 54s 
+3800 | 1900000 | loss: 0.1600508271 | accuracy = 0.7734720000 |  0.143ms/board |   0m 55s 
+3900 | 1950000 | loss: 0.1584871068 | accuracy = 0.7723544000 |  0.143ms/board |   0m 56s 
+4000 | 2000000 | loss: 0.1573596711 | accuracy = 0.7928520000 |  0.140ms/board |   0m 58s 
+4100 | 2050000 | loss: 0.1557567042 | accuracy = 0.7912368000 |  0.147ms/board |   0m 59s 
+4200 | 2100000 | loss: 0.1554373978 | accuracy = 0.7703256000 |  0.154ms/board |   1m 01s 
+4300 | 2150000 | loss: 0.1540093837 | accuracy = 0.7912240000 |  0.145ms/board |   1m 02s 
+4400 | 2200000 | loss: 0.1518068639 | accuracy = 0.7872488000 |  0.140ms/board |   1m 04s 
+4500 | 2250000 | loss: 0.1505264669 | accuracy = 0.7656664000 |  0.143ms/board |   1m 05s 
+4600 | 2300000 | loss: 0.1484130503 | accuracy = 0.7530432000 |  0.137ms/board |   1m 07s 
+4700 | 2350000 | loss: 0.1466273281 | accuracy = 0.7052168000 |  0.154ms/board |   1m 08s 
+4800 | 2400000 | loss: 0.1436405905 | accuracy = 0.7253904000 |  0.144ms/board |   1m 10s 
+4900 | 2450000 | loss: 0.1418366394 | accuracy = 0.7293304000 |  0.156ms/board |   1m 11s 
+5000 | 2500000 | loss: 0.1386460395 | accuracy = 0.7307200000 |  0.140ms/board |   1m 13s 
+5100 | 2550000 | loss: 0.1375920656 | accuracy = 0.7277080000 |  0.144ms/board |   1m 14s 
+5200 | 2600000 | loss: 0.1341422634 | accuracy = 0.6919536000 |  0.131ms/board |   1m 15s 
+5300 | 2650000 | loss: 0.1316221924 | accuracy = 0.7177672000 |  0.161ms/board |   1m 17s 
+5400 | 2700000 | loss: 0.1259342002 | accuracy = 0.7913928000 |  0.133ms/board |   1m 18s 
+5500 | 2750000 | loss: 0.0997610914 | accuracy = 0.8488176000 |  0.154ms/board |   1m 20s 
+5600 | 2800000 | loss: 0.0924487493 | accuracy = 0.9572840000 |  0.144ms/board |   1m 21s 
+5700 | 2850000 | loss: 0.0854953705 | accuracy = 0.9578320000 |  0.154ms/board |   1m 23s 
+5800 | 2900000 | loss: 0.0793465983 | accuracy = 0.9584344000 |  0.154ms/board |   1m 24s 
+5900 | 2950000 | loss: 0.0730614299 | accuracy = 0.9639680000 |  0.146ms/board |   1m 25s 
+6000 | 3000000 | loss: 0.0673602068 | accuracy = 0.9637280000 |  0.135ms/board |   1m 27s 
+6100 | 3050000 | loss: 0.0612169021 | accuracy = 0.9633920000 |  0.133ms/board |   1m 28s 
+6200 | 3100000 | loss: 0.0544829993 | accuracy = 0.9644560000 |  0.143ms/board |   1m 30s 
+6300 | 3150000 | loss: 0.0489370869 | accuracy = 0.9635960000 |  0.153ms/board |   1m 31s 
+6400 | 3200000 | loss: 0.0430542450 | accuracy = 0.9724640000 |  0.149ms/board |   1m 33s 
+6500 | 3250000 | loss: 0.0370469385 | accuracy = 1.0000000000 |  0.142ms/board |   1m 34s 
+Finished Training: GameOfLifeForward_1 - 6576 epochs in 95.2s
+GameOfLifeForward_1.savefile(): /Users/zaxhyperson/WORKS/GOL/models/GameOfLifeForward_1.pth = 2.6 kB
+--------------------
+GameOfLifeForward_1
+GameOfLifeForward_1(
+  (criterion): MSELoss()
+  (layers): ModuleList(
+    (0): Conv2d(1, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), padding_mode=circular)
+    (1): Conv2d(2, 2, kernel_size=(1, 1), stride=(1, 1))
+    (2): Conv2d(2, 1, kernel_size=(1, 1), stride=(1, 1))
+  )
+  (dropout): Dropout(p=0.0, inplace=False)
+  (activation): PReLU(num_parameters=1)
+)
+activation.weight
+[-0.6218677]
+
+layers.0.weight
+[[[[-0.4276728  -0.42750558 -0.42754623]
+   [-0.42752114 -1.3734525  -0.4274225 ]
+   [-0.42762038 -0.42748547 -0.42748764]]]]
+
+layers.0.bias
+[1.2803146]
+
+layers.1.weight
+[[[[ 0.40506634]]
+  [[ 1.7274375 ]]]
+ [[[ 3.2142632 ]]
+  [[-2.3613672 ]]]]
+
+layers.1.bias
+[ 0.51603323 -0.00443858]
+
+layers.2.weight
+[[[[ 0.468574 ]]
+  [[-2.7755954]]]]
+
+layers.2.bias
+[0.8878426]
+
